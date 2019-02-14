@@ -7,12 +7,14 @@ extern "C" int main(void)
 	// To use Teensy 3.0 without Arduino, simply put your code here.
 	// For example:
 
+	int delay_ms = 1500;
+
 	pinMode(13, OUTPUT);
 	while (1) {
 		digitalWriteFast(13, HIGH);
-		delay(500);
+		delay(delay_ms);
 		digitalWriteFast(13, LOW);
-		delay(500);
+		delay(delay_ms);
 	}
 
 
